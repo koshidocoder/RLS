@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        button {
+            font-size: 20px;
+            padding: 15px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Кликер</h1>
+    <p>Нажатий: <span id="count">0</span></p>
+    <button onclick="increment()">Клик!</button>
+
+    <script>
+        let count = 0;
+        function increment() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+</body>
+</html>
